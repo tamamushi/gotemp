@@ -27,4 +27,4 @@ clean:
 	rm -rf ./bin
 
 deploy: clean build
-	sls deploy --verbose
+	npx sls deploy --verbose

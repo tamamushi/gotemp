@@ -17,7 +17,7 @@ functions:
     events:
       - http:
           path: /invoice
-          method: post
+          method: get
   estimate:
     handler: bin/estimate
     events:

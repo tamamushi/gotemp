@@ -2,7 +2,7 @@
 package rest
 
 import (
-  "log"
+  "encoding/base64"
   usecase "internal.pkg/gotemp/usecase"
   "github.com/gin-gonic/gin"
 )
@@ -29,6 +29,5 @@ func (eh *estimateHandler) Create(c *gin.Context) {
 		return
 	}
 
-	log.Print(pdf)
 	c.Data(200, "application/pdf", pdf)
 }
